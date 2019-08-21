@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sally Student Resume Part Deux</title>
+</head>
+<body>
+  <div id="application-root"></div>
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+  <script type="text/babel">
+    function App() {
+      return (
+        <main>
+          <section id="experience">
+			      <h2>Experience</h2>
+			      <h3>Galactic Senate</h3>
+              <ul>
+                <li>Senator</li>
+                <li>2017-2018</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?</li>
+              </ul>
+            <h3>Rebel Alliance</h3>
+              <ul>
+                <li>General</li>
+                <li>2018-Current</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?</li>
+              </ul>
+          </section>
+          <section id="education">
+            <h2>Education</h2>
+            <h3>University of Alderaan</h3>
+              <ul>
+                <li>2013-2017</li>
+                <li>Bachelor Degree of Fine Arts in Political Science</li>
+              </ul>
+          </section>
+          <section id="contact info">
+            <h2>Contact Info</h2>
+            <address>
+              <ul>
+                <li>Sally Student</li>
+                <li><a href={`mailto:sallystudent@gmail.com`}>sallystudent@gmail.com</a></li>
+                <li>867-5309</li>
+              </ul>
+              <img src="https://clipart.info/images/ccovers/1513358464Princess%20Leia%20transparent%20PNG.png" alt="Photo of Princess Leia aka Sally Student"/>	
+            </address>
+          </section>	         
+        </main>
+      );
+    };
+    ReactDOM.render(
+      <App />,
+      document.querySelector('#application-root')
+    );
+  </script>
+</body>
+</html>
